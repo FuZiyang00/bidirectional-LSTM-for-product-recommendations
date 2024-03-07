@@ -19,7 +19,8 @@ class Sales_to_sentences:
         """
         This method takes a dataframe of sales and groups the items belonging to the same receipt, where each 
         observation is a sentence of the form product_1 product_2  ... product_n that represents 
-        a single transaction.
+        a single transaction. Grouping criteria item Ids presenting the same store_ID, date, time_stamp, register_ID, 
+        and receipt_ID (this number is not unique) are considered items belonging to the same transaction.
         """
         transactions = self.sales.groupby(['store_ID', 'date', 'time_stamp', 'register_ID', 'receipt_ID']) \
             .apply(lambda group: list(group['item_ID'].values)) \
