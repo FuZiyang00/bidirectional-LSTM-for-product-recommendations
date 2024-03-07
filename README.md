@@ -15,3 +15,16 @@ The data used in this project consists of transaction records, with each record 
 ## Model
 
 The Bidirectional LSTM model is a type of recurrent neural network that is capable of learning patterns in sequences of data. In this project, the model learns patterns in the sequence of products purchased by users, and uses this knowledge to predict what products a user might purchase next.
+
+## Project structure 
+```
+project-root/
+│
+├── src/
+│ ├── data_processing.py
+│ └── model.py
+|
+│── main.py
+├── README.md
+```
+
