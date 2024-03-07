@@ -4,7 +4,6 @@ import pandas as pd
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
-
 if __name__ == "__main__": 
 
     # Load the data
